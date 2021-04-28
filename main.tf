@@ -1,12 +1,12 @@
 terraform {
-  backend "remote" {
-    hostname      = "app.terraform.io"
-    organization  = "hashicorp-learn"
+  # backend "remote" {
+  #   hostname      = "app.terraform.io"
+  #   organization  = "hashicorp-learn"
 
-    workspaces {
-      name = "learn-terraform-versions"
-    }
-  }  
+  #   workspaces {
+  #     name = "learn-terraform-versions"
+  #   }
+  # }
 
   required_providers {
     aws = {
