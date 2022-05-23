@@ -8,6 +8,13 @@ terraform {
     }
   }
 
+  cloud {
+    organization = "shorter-solutions"
+    workspaces {
+      name = "learn-terraform-versions"
+    }
+  }
+
   required_version = "~> 1.2.0"
 }
 
