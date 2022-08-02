@@ -8,11 +8,11 @@ terraform {
     }
   }
 
-  required_version = "~> 0.12.29"
+  required_version = "~> 0.14.9"
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "eu-west-2"
 }
 
 provider "random" {}
