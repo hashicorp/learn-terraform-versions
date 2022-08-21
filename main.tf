@@ -8,13 +8,14 @@ terraform {
     }
   }
 
-  required_version = "~> 0.13.03.03.0"
+  required_version = "~> 0.13.0"
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region     = "us-west-2"
+  access_key = "AKIA4V2EH64PNAHZ6LPL"
+  secret_key = "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"
 }
-
 provider "random" {}
 
 resource "random_pet" "name" {}
