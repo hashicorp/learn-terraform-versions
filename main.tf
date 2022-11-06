@@ -8,7 +8,7 @@ terraform {
     }
   }
 
-  required_version = "~> 0.12.29"
+  required_version = "~> 0.13.0"
 }
 
 provider "aws" {
@@ -33,7 +33,7 @@ resource "aws_instance" "web" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t2.micro"
   user_data     = file("init-script.sh")
-
+  # subnet_id = "subnet-00ec18b96040e2fe6"
   tags = {
     Name = random_pet.name.id
   }
