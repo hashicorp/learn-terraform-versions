@@ -11,7 +11,7 @@ terraform {
     }
   }
 
-  required_version = "~> 0.12.29"
+  required_version = "~> 0.13.0"
 }
 
 provider "aws" {
@@ -22,7 +22,7 @@ provider "random" {}
 
 resource "random_pet" "name" {}
 
-data "aws_ami" "amazon_linux" {
+/* data "aws_ami" "amazon_linux" {
   most_recent = true
   owners      = ["amazon"]
 
@@ -41,3 +41,4 @@ resource "aws_instance" "web" {
     Name = random_pet.name.id
   }
 }
+*/
