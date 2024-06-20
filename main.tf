@@ -1,4 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
+i# Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
 provider "aws" {
@@ -27,4 +27,6 @@ resource "aws_instance" "web" {
   tags = {
     Name = random_pet.name.id
   }
+
+  required_version = "~> 0.13.0"
 }
