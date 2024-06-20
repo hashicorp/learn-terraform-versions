@@ -1,6 +1,6 @@
 i# Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
-
+#test
 provider "aws" {
   region = "us-west-2"
 }
